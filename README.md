@@ -3,11 +3,11 @@ Framework to build MC simulations with random variable parameters defined in exc
 
 This package provides a simple framework to run MonteCarlo models based on parameters in excel spreadsheets like such:
 
-| variable | module       | distribution | param 1 | param 2 |
-|----------|--------------|--------------|---------|---------|
-| A        | numpy.random | choice       | 2       |         |
-|          |              |              |         |         |
-|          |              |              |         |         |
+| variable | module       | distribution | param 1 | param 2 | param 3 |
+|----------|--------------|--------------|---------|---------|---------|
+| A        | numpy.random | choice       | 2       | 4       |         |
+| B        | numpy.random | uniform      | 3       |         |         |
+| C        | numpy.random | triangular   | 3       | 5       | 324.23  |
 
 For each variable a numpy random distribution is created (choice, uniform or triangular in the example) with the given parameters.
 Only three parameters max at the moment, sorry.
